@@ -13,6 +13,7 @@
   ],
   "author": "bertho",
   "categories": ["Developer tools", "Blockchain", "ETH2.0"],
+  "keywords": ["diva", "ethereum", "testnet", "distributed validator technology", "dvt", "liquid staking"],
   "links": {
     "homepage": "https://shamirlabs.org",
     "ui": "http://ui.diva.dappnode:8888"
