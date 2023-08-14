@@ -1,0 +1,21 @@
+{
+  "name": "goerli-diva.public.dappnode.eth",
+  "version": "0.1.0",
+  "description": "Liquid Staking protocol powered by Distributed Validators",
+  "type": "service",
+  "mainService": "diva",
+  "exposable": [
+    {
+      "name": "P2P communication",
+      "serviceName": "diva",
+      "port": 5050
+    }
+  ],
+  "author": "bertho",
+  "categories": ["Developer tools", "Blockchain", "ETH2.0"],
+  "links": {
+    "homepage": "https://shamirlabs.org",
+    "ui": "http://ui.diva.dappnode:8888"
+  },
+  "license": "GPL-3.0"
+}
