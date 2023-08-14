@@ -8,4 +8,5 @@ exec -c validator \
   --validators-external-signer-url="http://diva.goerli-diva.public.dappnode:9000" \
   --web \
   --wallet-dir=/jwt \
-  --grpc-gateway-host=0.0.0.0
+  --grpc-gateway-host=0.0.0.0 \
+  --graffiti="Diva operator"
