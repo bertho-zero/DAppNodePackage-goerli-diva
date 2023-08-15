@@ -24,7 +24,7 @@
   ],
   "links": {
     "homepage": "https://diva.community",
-    "ui": "http://ui.diva.dappnode:8888"
+    "ui": "http://ui.goerli-diva.public.dappnode"
   },
   "repository": {
     "type": "git",

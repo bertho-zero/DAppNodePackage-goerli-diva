@@ -10,7 +10,7 @@ There are now three endpoints in this package:
 
 1. `http://diva.goerli-diva.public.dappnode:5050` is used for P2P communication.
 2. `http://diva.goerli-diva.public.dappnode:30000` is used to access the API of your node, keep it open if you want to use the Operator UI.
-3. `http://diva.goerli-diva.public.dappnode:8888` is used by the Operator UI.
+3. `http://ui.goerli-diva.public.dappnode` is used by the Operator UI.
 
 
 When configuring the connection between the **Operator UI** and the API of your node the values are:
