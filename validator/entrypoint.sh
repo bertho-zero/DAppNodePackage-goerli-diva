@@ -2,19 +2,19 @@
 
 case $_DAPPNODE_GLOBAL_CONSENSUS_CLIENT_PRATER in
 "prysm-prater.dnp.dappnode.eth")
-  BEACON_RPC_PROVIDER="beacon-chain.prysm-prater.dappnode"
+  BEACON_RPC_PROVIDER="beacon-chain.prysm-prater.dappnode:4000"
   ;;
 "teku-prater.dnp.dappnode.eth")
-  BEACON_RPC_PROVIDER="beacon-chain.teku-prater.dappnode"
+  BEACON_RPC_PROVIDER="beacon-chain.teku-prater.dappnode:4000"
   ;;
 "lighthouse-prater.dnp.dappnode.eth")
-  BEACON_RPC_PROVIDER="beacon-chain.lighthouse-prater.dappnode"
+  BEACON_RPC_PROVIDER="beacon-chain.lighthouse-prater.dappnode:4000"
   ;;
 "nimbus-prater.dnp.dappnode.eth")
-  BEACON_RPC_PROVIDER="beacon-validator.nimbus-prater.dappnode"
+  BEACON_RPC_PROVIDER="beacon-validator.nimbus-prater.dappnode:4500"
   ;;
 "lodestar-prater.dnp.dappnode.eth")
-  BEACON_RPC_PROVIDER="beacon-chain.lodestar-prater.dappnode"
+  BEACON_RPC_PROVIDER="beacon-chain.lodestar-prater.dappnode:4000"
   ;;
 *)
   echo "Unknown value for _DAPPNODE_GLOBAL_CONSENSUS_CLIENT_PRATER: $_DAPPNODE_GLOBAL_CONSENSUS_CLIENT_PRATER"
