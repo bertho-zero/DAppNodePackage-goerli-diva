@@ -12,7 +12,7 @@ services:
       - "diva-log-vol:/var/log/divad/"
     environment:
       DIVA_VAULT_PASSWORD: null
-      OTEL_EXPORTER_JAEGER_AGENT_HOST: jaeger
+      OTEL_EXPORTER_JAEGER_AGENT_HOST: jaeger.goerli-diva.public.dappnode
       OTEL_EXPORTER_JAEGER_AGENT_PORT: 6831
       EXECUTION_CLIENT_URL: "ws://goerli-geth.dappnode:8546"
       CONSENSUS_CLIENT_URL: "http://beacon-chain.prysm-prater.dappnode:3500"
