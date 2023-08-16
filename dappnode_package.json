@@ -26,6 +26,16 @@
     "homepage": "https://diva.community",
     "ui": "http://ui.goerli-diva.public.dappnode"
   },
+  "globalEnvs": [
+    {
+      "envs": ["EXECUTION_CLIENT_PRATER", "CONSENSUS_CLIENT_PRATER"],
+      "services": ["diva"]
+    },
+    {
+      "envs": ["CONSENSUS_CLIENT_PRATER"],
+      "services": ["validator"]
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/bertho-zero/DAppNodePackage-goerli-diva.git"

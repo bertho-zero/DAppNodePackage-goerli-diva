@@ -1,32 +1,5 @@
 version: "2"
 fields:
-  - id: executionClientUrl
-    target:
-      type: environment
-      name: EXECUTION_CLIENT_URL
-      service: diva
-    title: Execution RPC
-    description: >-
-      RPC WebSocket endpoint of your execution client
-    required: true
-  - id: consensusClientUrl
-    target:
-      type: environment
-      name: CONSENSUS_CLIENT_URL
-      service: diva
-    title: Consensus Layer REST API
-    description: >-
-      REST API provider endpoint of your consensus client
-    required: true
-  - id: beaconRpcProvider
-    target:
-      type: environment
-      name: BEACON_RPC_PROVIDER
-      service: validator
-    title: Consensus RPC
-    description: >-
-      RPC provider endpoint of your consensus client
-    required: true
   - id: divaVaultPassword
     target:
       type: environment

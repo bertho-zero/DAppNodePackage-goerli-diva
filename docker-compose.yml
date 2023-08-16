@@ -14,8 +14,6 @@ services:
       DIVA_VAULT_PASSWORD: null
       OTEL_EXPORTER_JAEGER_AGENT_HOST: jaeger.goerli-diva.public.dappnode
       OTEL_EXPORTER_JAEGER_AGENT_PORT: 6831
-      EXECUTION_CLIENT_URL: "ws://goerli-geth.dappnode:8546"
-      CONSENSUS_CLIENT_URL: "http://beacon-chain.prysm-prater.dappnode:3500"
       DIVA_API_KEY: null
     ports:
       - "5050:5050"
@@ -33,8 +31,6 @@ services:
       - "validator-config-vol:/config"
       - "validator-data-vol:/data"
       - "validator-jwt-vol:/jwt"
-    environment:
-      BEACON_RPC_PROVIDER: "beacon-chain.prysm-prater.dappnode:4000"
     expose:
       - "7500"
   reloader:

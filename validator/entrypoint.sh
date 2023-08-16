@@ -1,5 +1,27 @@
 #!/bin/bash
 
+case $_DAPPNODE_GLOBAL_CONSENSUS_CLIENT_PRATER in
+"prysm-prater.dnp.dappnode.eth")
+  BEACON_RPC_PROVIDER="beacon-chain.prysm-prater.dappnode"
+  ;;
+"teku-prater.dnp.dappnode.eth")
+  BEACON_RPC_PROVIDER="beacon-chain.teku-prater.dappnode"
+  ;;
+"lighthouse-prater.dnp.dappnode.eth")
+  BEACON_RPC_PROVIDER="beacon-chain.lighthouse-prater.dappnode"
+  ;;
+"nimbus-prater.dnp.dappnode.eth")
+  BEACON_RPC_PROVIDER="beacon-validator.nimbus-prater.dappnode"
+  ;;
+"lodestar-prater.dnp.dappnode.eth")
+  BEACON_RPC_PROVIDER="beacon-chain.lodestar-prater.dappnode"
+  ;;
+*)
+  echo "Unknown value for _DAPPNODE_GLOBAL_CONSENSUS_CLIENT_PRATER: $_DAPPNODE_GLOBAL_CONSENSUS_CLIENT_PRATER"
+  BEACON_RPC_PROVIDER=$_DAPPNODE_GLOBAL_CONSENSUS_CLIENT_PRATER
+  ;;
+esac
+
 exec -c validator \
   --accept-terms-of-use \
   --beacon-rpc-provider="${BEACON_RPC_PROVIDER}" \
