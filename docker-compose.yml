@@ -51,7 +51,7 @@ services:
     build:
       context: operator-ui
       args:
-        UPSTREAM_VERSION: v23.8.2
+        UPSTREAM_VERSION: v23.8.4
     restart: unless-stopped
     ports:
       - "8888:80"
