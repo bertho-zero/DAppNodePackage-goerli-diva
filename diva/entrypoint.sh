@@ -48,6 +48,7 @@ divad \
   --consensus-client-url=${CONSENSUS_CLIENT_URL} \
   --tracing \
   --log-level=debug \
+  --swagger-ui-enabled \
   --contract=0xf73280D617AB4BDff2558adcD1a1659ccD1B4fF9 \
   --master-key=${DIVA_API_KEY} \
 2>&1 | tee /var/log/divad/divad.log
