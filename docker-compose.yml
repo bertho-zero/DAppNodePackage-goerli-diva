@@ -17,9 +17,9 @@ services:
       DIVA_API_KEY: null
     ports:
       - "5050:5050"
-      - "30000:30000"
     expose:
       - "9000"
+      - "30000"
   validator:
     image: "validator.goerli-diva.public.dappnode.eth:0.1.5"
     build:
@@ -53,8 +53,8 @@ services:
       args:
         UPSTREAM_VERSION: v23.9.0
     restart: unless-stopped
-    ports:
-      - "8888:80"
+    expose:
+      - "80"
   jaeger:
     image: "jaeger.goerli-diva.public.dappnode.eth:0.1.5"
     build:
