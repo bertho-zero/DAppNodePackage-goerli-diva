@@ -1,7 +1,7 @@
 version: "3.5"
 services:
   diva:
-    image: "diva.goerli-diva.public.dappnode.eth:0.1.6"
+    image: "diva.goerli-diva.public.dappnode.eth:0.1.7"
     build:
       context: diva
       args:
@@ -21,7 +21,7 @@ services:
       - "9000"
       - "30000"
   validator:
-    image: "validator.goerli-diva.public.dappnode.eth:0.1.6"
+    image: "validator.goerli-diva.public.dappnode.eth:0.1.7"
     build:
       context: validator
       args:
@@ -34,7 +34,7 @@ services:
     expose:
       - "7500"
   reloader:
-    image: "reloader.goerli-diva.public.dappnode.eth:0.1.6"
+    image: "reloader.goerli-diva.public.dappnode.eth:0.1.7"
     build:
       context: reloader
       args:
@@ -47,7 +47,7 @@ services:
       DIVA_W3S_API: "http://diva.goerli-diva.public.dappnode:9000"
       SYNC_PERIOD: 600
   ui:
-    image: "ui.goerli-diva.public.dappnode.eth:0.1.6"
+    image: "ui.goerli-diva.public.dappnode.eth:0.1.7"
     build:
       context: operator-ui
       args:
@@ -56,14 +56,14 @@ services:
     expose:
       - "80"
   jaeger:
-    image: "jaeger.goerli-diva.public.dappnode.eth:0.1.6"
+    image: "jaeger.goerli-diva.public.dappnode.eth:0.1.7"
     build:
       context: jaeger
       args:
         UPSTREAM_VERSION: v23.8.0
     restart: unless-stopped
   vector:
-    image: "vector.goerli-diva.public.dappnode.eth:0.1.6"
+    image: "vector.goerli-diva.public.dappnode.eth:0.1.7"
     build:
       context: vector
       args:
