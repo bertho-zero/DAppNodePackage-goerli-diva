@@ -5,7 +5,7 @@ services:
     build:
       context: diva
       args:
-        UPSTREAM_VERSION: v23.9.1
+        UPSTREAM_VERSION: v24.1.0
     restart: unless-stopped
     volumes:
       - "diva-vol:/opt/diva/data/"
@@ -51,7 +51,7 @@ services:
     build:
       context: operator-ui
       args:
-        UPSTREAM_VERSION: v23.9.0
+        UPSTREAM_VERSION: v24.1.0
     restart: unless-stopped
     expose:
       - "80"

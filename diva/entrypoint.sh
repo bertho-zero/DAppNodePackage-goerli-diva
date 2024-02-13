@@ -41,14 +41,20 @@ case $_DAPPNODE_GLOBAL_CONSENSUS_CLIENT_PRATER in
   ;;
 esac
 
-divad \
+exec -c divad \
   --db=/opt/diva/data/diva.db \
   --w3s-address=0.0.0.0 \
-  --execution-client-url=${EXECUTION_CLIENT_URL} \
-  --consensus-client-url=${CONSENSUS_CLIENT_URL} \
+  --execution-client-url="${EXECUTION_CLIENT_URL}" \
+  --consensus-client-url="${CONSENSUS_CLIENT_URL}" \
   --tracing \
   --log-level=debug \
   --swagger-ui-enabled \
   --contract=0xf73280D617AB4BDff2558adcD1a1659ccD1B4fF9 \
-  --master-key=${DIVA_API_KEY} \
+  --master-key="${DIVA_API_KEY}" \
+  --genesis-time=1616508000 \
+  --gvr=0x043db0d9a83813551ee2f33450d23797757d430911a9320530ad8a0eabc43efb \
+  --genesis-fork-version=0x00001020 \
+  --current-fork-version=0x04001020 \
+  --deposit-contract=0xff50ed3d0ec03ac01d4c79aad74928bff48a7b2b \
+  --chain-id=5 \
 2>&1 | tee /var/log/divad/divad.log

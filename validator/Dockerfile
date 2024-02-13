@@ -10,7 +10,7 @@ ENV DOWNLOAD_URL https://github.com/prysmaticlabs/prysm/releases/download
 RUN DEBIAN_FRONTEND=noninteractive \
   apt update && apt install --assume-yes --no-install-recommends wget ca-certificates && \
   wget -q $DOWNLOAD_URL/$UPSTREAM_VERSION/validator-$UPSTREAM_VERSION-linux-${TARGETARCH:-amd64} -O /usr/local/bin/validator && \
-  chmod +x  /usr/local/bin/validator
+  chmod +x /usr/local/bin/validator
 
 ################
 # Runner image #
